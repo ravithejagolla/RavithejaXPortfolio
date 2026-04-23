@@ -1,27 +1,12 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Hero from './components/Hero';
+import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, { threshold: 0.1 });
-
-    const elements = document.querySelectorAll('.animate-on-scroll');
-    elements.forEach((el) => observer.observe(el));
-
-    return () => {
-      elements.forEach((el) => observer.unobserve(el));
-    };
-  }); // run after every render to catch newly added elements if data loads dynamically
-
   return (
     <>
       <header>
@@ -29,6 +14,7 @@ function App() {
           <a href="#" className="logo">Ravitheja<span className="text-gradient">.dev</span></a>
           <ul className="nav-links">
             <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -37,10 +23,12 @@ function App() {
       </header>
       <main>
         <Hero />
+        <About />
         <Skills />
         <Projects />
         <Contact />
       </main>
+      <Footer />
     </>
   );
 }

@@ -1,20 +1,26 @@
 import React from 'react';
 import './Projects.css';
+import { motion } from 'framer-motion';
+import { ExternalLink } from 'lucide-react';
+import { Github } from './SocialIcons';
 
 const Projects = () => {
-    // Static data for projects
     const projects = [
         {
-            title: 'Shop-Smart E-Commerce',
-            description: 'A full-stack e-commerce application with secure authentication, cart management, and Stripe integration.',
+            title: 'RetailCanvas E-Commerce',
+            description: 'A modern full-stack e-commerce platform featuring a sleek UI, category-based browsing, and integrated shopping features.',
             tech: ['React', 'Node.js', 'Express', 'MongoDB'],
-            link: '#'
+            image: '/assets/retailcanvas.png',
+            link: 'https://shop-smart-commerce.netlify.app/',
+            github: 'https://github.com/ravithejagolla/Shop-Smart-E-Commerce'
         },
         {
-            title: 'AI Chat Assistant',
-            description: 'A Retrieval-Augmented Generation chatbot utilizing real-time web search and dynamic UI responses.',
-            tech: ['React', 'OpenAI', 'Node.js'],
-            link: '#'
+            title: 'QueryMind - NL to SQL',
+            description: 'An AI-powered application that converts natural language queries into complex SQL queries, enabling users to retrieve data from databases without writing SQL.',
+            tech: ['React', 'LangChain', 'OpenAI', 'Node.js', 'PostgreSQL'],
+            image: '/assets/querymind.png',
+            link: 'https://querymind-nltosql.netlify.app/',
+            github: 'https://github.com/ravithejagolla/QueryMind'
         }
     ];
 
@@ -24,16 +30,32 @@ const Projects = () => {
                 <h2 className="section-title animate-on-scroll">Featured <span className="text-gradient">Projects</span></h2>
                 <div className="projects-grid">
                     {projects.map((project, index) => (
-                        <div key={index} className="glass-card project-card animate-on-scroll">
-                            <h3>{project.title}</h3>
-                            <p className="project-desc">{project.description}</p>
-                            <div className="project-tech">
-                                {project.tech.map((t, i) => (
-                                    <span key={i} className="tech-badge">{t}</span>
-                                ))}
+                        <motion.div
+                            key={index}
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5, delay: index * 0.2 }}
+                            className="glass-card project-card"
+                        >
+                            <div className="project-image-container">
+                                <img src={project.image} alt={project.title} className="project-image" />
+                                <div className="project-overlay">
+                                    <div className="overlay-links">
+                                        <a href={project.github} className="icon-link"><Github size={20} /></a>
+                                        <a href={project.link} className="icon-link"><ExternalLink size={20} /></a>
+                                    </div>
+                                </div>
                             </div>
-                            <a href={project.link} className="btn btn-secondary project-link">View Project</a>
-                        </div>
+                            <div className="project-info">
+                                <h3>{project.title}</h3>
+                                <p className="project-desc">{project.description}</p>
+                                <div className="project-tech">
+                                    {project.tech.map((t, i) => (
+                                        <span key={i} className="tech-badge">{t}</span>
+                                    ))}
+                                </div>
+                            </div>
+                        </motion.div>
                     ))}
                 </div>
             </div>
