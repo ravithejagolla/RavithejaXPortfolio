@@ -13,7 +13,7 @@ const About = () => {
                     className="about-image animate-on-scroll"
                 >
                     <div className="image-wrapper">
-                        <img src="/assets/avatar.png" alt="Ravitheja" />
+                        <img src="/assets/profile_pro.png" alt="Ravitheja" />
                         <div className="image-border"></div>
                     </div>
                 </motion.div>

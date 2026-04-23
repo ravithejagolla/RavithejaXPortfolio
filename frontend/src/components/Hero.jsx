@@ -42,7 +42,7 @@ const Hero = () => {
                     className="hero-image"
                 >
                     <div className="blob-bg"></div>
-                    <img src="/assets/avatar.png" alt="Ravitheja" />
+                    <img src="/assets/profile_pro.png" alt="Ravitheja" />
                 </motion.div>
             </div>
             
