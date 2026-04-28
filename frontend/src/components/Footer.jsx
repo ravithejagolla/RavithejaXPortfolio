@@ -24,10 +24,10 @@ const Footer = () => {
                     <div className="footer-socials">
                         <h4>Socials</h4>
                         <div className="social-icons">
-                            <a href="#" aria-label="Github"><Github size={20} /></a>
-                            <a href="#" aria-label="Linkedin"><Linkedin size={20} /></a>
-                            <a href="#" aria-label="Twitter"><Twitter size={20} /></a>
-                            <a href="#" aria-label="Mail"><Mail size={20} /></a>
+                            <a href="https://github.com/ravithejagolla" aria-label="Github" target="_blank" rel="noopener noreferrer"><Github size={20} /></a>
+                            <a href="http://linkedin.com/in/ravitheja-golla-880661310/" aria-label="Linkedin" target="_blank" rel="noopener noreferrer"><Linkedin size={20} /></a>
+                            <a href="https://twitter.com/ravithejagolla" aria-label="Twitter" target="_blank" rel="noopener noreferrer"><Twitter size={20} /></a>
+                            <a href="mailto:gollaravitheja007@gmail.com" aria-label="Mail" target="_blank" rel="noopener noreferrer"><Mail size={20} /></a>
                         </div>
                     </div>
                 </div>

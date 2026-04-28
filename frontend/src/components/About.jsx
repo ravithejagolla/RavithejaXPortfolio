@@ -25,7 +25,7 @@ const About = () => {
                 >
                     <h2 className="section-title">About <span className="text-gradient">Me</span></h2>
                     <p>
-                        I am a passionate Full Stack Developer with a keen eye for aesthetic design and a love for creating seamless user experiences.
+                        Hi, I'm <strong>Ravitheja</strong>! I am a passionate Full Stack Developer with a keen eye for aesthetic design and a love for creating seamless user experiences.
                         With a background in computer science and years of experience building scalable web applications, I bridge the gap between
                         complex back-end logic and intuitive front-end interfaces.
                     </p>

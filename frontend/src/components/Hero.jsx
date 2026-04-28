@@ -23,15 +23,15 @@ const Hero = () => {
                     </p>
                     <div className="hero-buttons">
                         <a href="#projects" className="btn btn-primary">View My Work</a>
-                        <a href="#" className="btn btn-secondary" style={{marginLeft: '1rem'}}>
+                        <a href="https://drive.google.com/file/d/1AeEss6NcB6bv4UKcSdw8rVPimo11cOLn/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{marginLeft: '1rem'}}>
                             <Download size={18} style={{marginRight: '8px', verticalAlign: 'middle'}} />
                             Resume
                         </a>
                     </div>
                     <div className="hero-socials">
-                        <a href="#" className="social-link"><Github size={24} /></a>
-                        <a href="#" className="social-link"><Linkedin size={24} /></a>
-                        <a href="#" className="social-link"><Twitter size={24} /></a>
+                        <a href="https://github.com/ravithejagolla" className="social-link" target="_blank" rel="noopener noreferrer"><Github size={24} /></a>
+                        <a href="http://linkedin.com/in/ravitheja-golla-880661310/" className="social-link" target="_blank" rel="noopener noreferrer"><Linkedin size={24} /></a>
+                        <a href="https://twitter.com/ravithejagolla" className="social-link" target="_blank" rel="noopener noreferrer"><Twitter size={24} /></a>
                     </div>
                 </motion.div>
                 

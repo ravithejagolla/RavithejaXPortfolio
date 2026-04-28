@@ -28,6 +28,11 @@ const Contact = () => {
             <div className="container">
                 <h2 className="section-title animate-on-scroll">Get In <span className="text-gradient">Touch</span></h2>
                 <div className="contact-container animate-on-scroll">
+                    <div style={{ textAlign: 'center', marginBottom: '2rem', color: 'var(--text-secondary)' }}>
+                        <p>I am currently open to new opportunities. Whether you have a question or just want to connect, my inbox is always open!</p>
+                        <p style={{ marginTop: '1rem' }}>Feel free to reach out via the form below or directly at <a href="mailto:gollaravitheja007@gmail.com" style={{ color: 'var(--accent-cyan)' }}>gollaravitheja007@gmail.com</a>.</p>
+                        <p style={{ marginTop: '0.5rem' }}>You can also find me on <a href="http://linkedin.com/in/ravitheja-golla-880661310/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-cyan)' }}>LinkedIn</a> and <a href="https://github.com/ravithejagolla" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-cyan)' }}>GitHub</a>.</p>
+                    </div>
                     <form className="glass-card contact-form" onSubmit={handleSubmit}>
                         <div className="form-group">
                             <label htmlFor="name">Name</label>

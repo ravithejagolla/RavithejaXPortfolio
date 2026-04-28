@@ -8,7 +8,7 @@ const Skills = () => {
         { 
             category: 'Frontend', 
             icon: <Monitor size={24} />,
-            items: ['React.js', 'HTML5/CSS3', 'JavaScript', 'Tailwind', 'Vite'] 
+            items: ['React.js', 'TypeScript', 'JavaScript', 'HTML5/CSS3', 'Tailwind', 'Vite'] 
         },
         { 
             category: 'Backend', 

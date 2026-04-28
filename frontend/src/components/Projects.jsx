@@ -41,8 +41,8 @@ const Projects = () => {
                                 <img src={project.image} alt={project.title} className="project-image" />
                                 <div className="project-overlay">
                                     <div className="overlay-links">
-                                        <a href={project.github} className="icon-link"><Github size={20} /></a>
-                                        <a href={project.link} className="icon-link"><ExternalLink size={20} /></a>
+                                        <a href={project.github} className="icon-link" target="_blank" rel="noopener noreferrer"><Github size={20} /></a>
+                                        <a href={project.link} className="icon-link" target="_blank" rel="noopener noreferrer"><ExternalLink size={20} /></a>
                                     </div>
                                 </div>
                             </div>
