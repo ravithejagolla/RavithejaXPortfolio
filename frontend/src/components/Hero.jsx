@@ -14,18 +14,14 @@ const Hero = () => {
                     transition={{ duration: 0.8 }}
                     className="hero-content"
                 >
-                    <h2 className="greeting">Hello, I'm</h2>
-                    <h1 className="name">Ravitheja <span className="text-gradient"></span></h1>
-                    <h3 className="role">Full Stack Developer</h3>
-                    <p className="bio">
-                        I build premium, aesthetic, and dynamic web applications. 
-                        Specialized in React, Node.js, and modern UX design.
+                    <h1 className="name">Ravitheja <span className="text-gradient">Golla</span></h1>
+                    <p className="bio" style={{ fontSize: '1.25rem', marginTop: '1rem', fontWeight: 300 }}>
+                        A passionate Full Stack Developer focused on building elegant, scalable, and user-centric web applications.
                     </p>
-                    <div className="hero-buttons">
-                        <a href="#projects" className="btn btn-primary">View My Work</a>
-                        <a href="https://drive.google.com/file/d/1AeEss6NcB6bv4UKcSdw8rVPimo11cOLn/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{marginLeft: '1rem'}}>
+                    <div className="hero-buttons" style={{ marginTop: '2rem' }}>
+                        <a href="https://drive.google.com/uc?export=download&id=1AeEss6NcB6bv4UKcSdw8rVPimo11cOLn" target="_blank" rel="noopener noreferrer" download className="btn btn-primary">
                             <Download size={18} style={{marginRight: '8px', verticalAlign: 'middle'}} />
-                            Resume
+                            Download Resume
                         </a>
                     </div>
                     <div className="hero-socials">

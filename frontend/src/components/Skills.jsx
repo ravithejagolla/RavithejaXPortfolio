@@ -19,6 +19,11 @@ const Skills = () => {
             category: 'Database & DevOps', 
             icon: <Database size={24} />,
             items: ['MongoDB', 'SQL', 'Git', 'AWS Basics', 'Docker'] 
+        },
+        { 
+            category: 'Soft Skills', 
+            icon: <Terminal size={24} />,
+            items: ['Communication', 'Teamwork', 'Problem Solving', 'Time Management', 'Adaptability'] 
         }
     ];
 

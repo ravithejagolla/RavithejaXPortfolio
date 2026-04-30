@@ -21,8 +21,24 @@ const Projects = () => {
             image: '/assets/querymind.png',
             link: 'https://querymind-nltosql.netlify.app/',
             github: 'https://github.com/ravithejagolla/QueryMind'
+        },
+        {
+            title: 'Health Buddy',
+            description: 'A dedicated health platform facilitating seamless interactions, messaging, and appointment scheduling between patients and doctors.',
+            tech: ['React', 'Node.js', 'Express', 'MongoDB'],
+            image: '/assets/healthcare.png',
+            link: 'https://elegant-hamster-c90294.netlify.app/',
+            github: 'https://github.com/ravithejagolla/HealthConnect'
+        },
+        {
+            title: 'Eat-Echo',
+            description: 'A voice-powered restaurant discovery app — just say a city name into the mic and instantly find nearby restaurants. Built with Web Speech API for a hands-free, intuitive search experience.',
+            tech: ['React', 'Web Speech API', 'Google API', 'CSS'],
+            image: '/assets/eatecho.png',
+            link: 'https://eat-echo-app1.netlify.app/Home',
+            github: 'https://github.com/raju0076/EatEcho'
         }
-    ];
+    ]
 
     return (
         <section id="projects" className="projects-section">
