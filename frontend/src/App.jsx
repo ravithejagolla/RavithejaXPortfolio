@@ -36,7 +36,17 @@ function App() {
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="https://drive.google.com/uc?export=download&id=1AeEss6NcB6bv4UKcSdw8rVPimo11cOLn" target="_blank" rel="noopener noreferrer" download>Resume</a></li>
+            <li>
+              <a 
+                href="https://drive.google.com/uc?export=download&id=1AeEss6NcB6bv4UKcSdw8rVPimo11cOLn" 
+                download 
+                onClick={(e) => {
+                  window.open("https://drive.google.com/file/d/1AeEss6NcB6bv4UKcSdw8rVPimo11cOLn/view", "_blank", "noopener,noreferrer");
+                }}
+              >
+                Resume
+              </a>
+            </li>
           </ul>
         </div>
       </header>

@@ -19,7 +19,14 @@ const Hero = () => {
                         A passionate Full Stack Developer focused on building elegant, scalable, and user-centric web applications.
                     </p>
                     <div className="hero-buttons" style={{ marginTop: '2rem' }}>
-                        <a href="https://drive.google.com/uc?export=download&id=1AeEss6NcB6bv4UKcSdw8rVPimo11cOLn" target="_blank" rel="noopener noreferrer" download className="btn btn-primary">
+                        <a 
+                            href="https://drive.google.com/uc?export=download&id=1AeEss6NcB6bv4UKcSdw8rVPimo11cOLn" 
+                            download 
+                            onClick={(e) => {
+                                window.open("https://drive.google.com/file/d/1AeEss6NcB6bv4UKcSdw8rVPimo11cOLn/view", "_blank", "noopener,noreferrer");
+                            }}
+                            className="btn btn-primary"
+                        >
                             <Download size={18} style={{marginRight: '8px', verticalAlign: 'middle'}} />
                             Download Resume
                         </a>
